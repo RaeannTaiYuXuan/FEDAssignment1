@@ -1,0 +1,467 @@
+body {
+    background-color: #F9F5E7;
+    margin: 0;
+}
+/*top navigation bar style*/
+.topnav {
+    background-color:#F9F5E7;
+    padding:10px 0;
+    border-bottom: solid 2px #023030;
+
+}
+.topnav img {
+    margin:0 auto;
+    display:table;
+    height: 130px;
+    width: 130px;
+}
+.rightNav a{
+    float: right;
+	  display: block;
+  	font-size: 17px;
+  	color: #023030;
+  	text-align: right;
+  	padding: 45px 20px 25px 25px;
+  	text-decoration: none;
+}
+.topnav .icon {
+    display: none;
+}
+/*Styling the dropdown btn*/
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+    font-size: 19px;  
+    border: none;
+    outline: none;
+    color: #023030;
+    padding: 45px 20px 25px 25px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.dropbtn a {
+  font-size: 16px;  
+    border: none;
+    outline: none;
+    color: #023030;
+    padding: 42px 40px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.dropContent {
+    display: none;
+    position: absolute;
+    background-color: #F9F5E7;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropContent a {
+    float: none;
+    color: #023030;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-bottom: solid 1.5px #023030;
+}
+.topnav a:hover, .dropdown:hover .dropbtn {
+    padding: 10px 0px;
+    background-color: #9A9C84;
+    color: #F9F5E7;
+    text-decoration:  4px underline #023030;
+
+}
+.dropContent a:hover {
+    background-color: #9A9C84;
+    color: #023030;
+}
+.dropdown:hover .dropContent {
+    display: block;
+}
+/*making it responsive will appear menu icon when is less thn 600px*/
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+}
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      background-color: #9A9C84;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      background-color: #9A9C84;
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropContent {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      background-color: #9A9C84;
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+}
+
+/* mainContent slideshow*/
+img{
+	height: 100%;
+	width: 100%;
+}
+
+.floating {
+	float: right ;
+	width: 100%;
+}
+#mainContent {
+    max-width: 2000px;
+    position: relative;
+    margin: 40px 20px;
+}
+#mainContent img {
+    float: right;
+	  height: 100%;
+	  width: 100%;
+    padding: 10px 10px;
+	  border-radius: 50px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 20px 20px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #023030;
+}
+.fade {
+  animation-name: fade;	
+  animation-duration: 5.0s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+/* style for side bar (fonts)*/
+.sidebar {
+	width: 100%;
+	background-color: #F9F5E7;
+}
+
+.sidebar h1{
+  color: #023030;
+	font-family:'Alkatra';font-size: 60px;
+}
+.sidebar p{
+  color: #023030;
+	font-size: 16px;
+	text-align: left;
+	padding: 20px 0px;
+}
+/*for the button (click with effect)*/
+.shopnow {
+  padding: 10px 20px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color:#9A9C84;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.shopnow:hover {
+  background-color: #023030
+}
+
+.shopnow:active {
+  background-color: #023030;
+  box-shadow: 0 5px grey;
+  transform: translateY(4px);
+}
+/*footer style*/
+#footerContent {
+  background-color: #9A9C84;
+  color: #F9F5E7;
+  margin: 20px 50px;
+}
+.align {
+  float: left;
+  width: 19%;
+  margin: 20px 0px;
+  color: #F9F5E7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 70%;
+  padding: 12px;
+  border: 2px solid #F9F5E7;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  border-radius: 15px;
+}
+
+input[type=submit] {
+  background-color: #023030;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #023030;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+.go {
+  padding: 13px 20px;
+  background-color: #F9F5E7;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.go :hover{
+  background-color: #9A9C84;
+}
+.go:active {
+  background-color: #fff;
+  box-shadow: 0 5px grey;
+  transform: translateY(4px);
+}
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/*filter*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+::selection{
+  color: #fff;
+  background: #007bff;
+}
+.wrapper{
+  margin: 100px auto;
+  max-width: 1100px;
+}
+.wrapper nav{
+  display: flex;
+  justify-content: center;
+}
+.wrapper .items{
+  display: flex;
+  max-width: 720px;
+  width: 100%;
+  justify-content: space-between;
+}
+.items span{
+  padding: 7px 25px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #007bff;
+  border-radius: 50px;
+  border: 2px solid #007bff;
+  transition: all 0.3s ease;
+}
+.items span.active,
+.items span:hover{
+  color: #fff;
+  background: #007bff;
+}
+
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.gallery .image{
+  width: calc(100% / 4);
+  padding: 7px;
+}
+.gallery .image span{
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+.gallery .image img{
+  width: 100%;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+}
+.gallery .image:hover img{
+  transform: scale(1.1);
+}
+.gallery .image.hide{
+  display: none;
+}
+.gallery .image.show{
+  animation: animate 0.4s ease;
+}
+@keyframes animate {
+  0%{
+    transform: scale(0.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.preview-box{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  background: #fff;
+  max-width: 700px;
+  width: 100%;
+  z-index: 5;
+  opacity: 0;
+  pointer-events: none;
+  border-radius: 3px;
+  padding: 0 5px 5px 5px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+}
+.preview-box.show{
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+  transition: all 0.3s ease;
+}
+.preview-box .details{
+  padding: 13px 15px 13px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.details .title{
+  display: flex;
+  font-size: 18px;
+  font-weight: 400;
+}
+.details .title p{
+  font-weight: 500;
+  margin-left: 5px;
+}
+.details .icon{
+  color: #007bff;
+  font-style: 22px;
+  cursor: pointer;
+}
+.preview-box .image-box{
+  width: 100%;
+  display: flex;
+}
+.image-box img{
+  width: 100%;
+  border-radius: 0 0 3px 3px;
+}
+.shadow{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  display: none;
+  background: rgba(0,0,0,0.4);
+}
+.shadow.show{
+  display: block;
+}
+
+@media (max-width: 1000px) {
+  .gallery .image{
+    width: calc(100% / 3);
+  }
+}
+@media (max-width: 800px) {
+  .gallery .image{
+    width: calc(100% / 2);
+  }
+}
+@media (max-width: 700px) {
+  .wrapper nav .items{
+    max-width: 600px;
+  }
+  nav .items span{
+    padding: 7px 15px;
+  }
+}
+@media (max-width: 600px) {
+  .wrapper{
+    margin: 30px auto;
+  }
+  .wrapper nav .items{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  nav .items span{
+    margin: 5px;
+  }
+  .gallery .image{
+    width: 100%;
+  }
+}
