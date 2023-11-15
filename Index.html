@@ -5,134 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <!--linking to another external to get images for ICON-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
     <!--link to google fonts (side bar)-->
     <link href='https://fonts.googleapis.com/css?family=Alkatra' rel='stylesheet'>
     <!--Link responsive with w3 external style sheet-->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+    
     <title>Home | Starria </title>
 </head>
 <body>
-    <header>
-        <div class="topnav" id="myTopnav">
-            <div class="rightNav">
-            <!--Js for responsive nav bar (into menu icon)-->
-            <a href="Login.html"><i class="fa fa-fw fa-user"></i></a>
-            <a href="Contact.html"><i class="fa fa-fw fa-envelope"></i></a>
-            <a href="Index.html"><i class="fa fa-home"></i></a>
-            </div>
-            <!--dropdown nav bar-->
-            <div class="dropdown">
-                <form action="Women.html">
-                <button class="dropbtn">Women &nbsp;<i class="fa fa-caret-down"></i></button>
-                </form>
-                <div class="dropContent">
-                    <a href="#">Dresses</a>
-                    <a href="#">Tops</a>
-                    <a href="#">Bottoms</a>
-                </div>
-            </div>
-            <!--Another dropdown nav btn-->
-            <div class="dropdown">
-                <form action="menswear.html">
-                <button class="dropbtn">Men&nbsp;<i class="fa fa-caret-down"></i></button>
-                </form>
-                <div class="dropContent">
-                    <a href="#">T-Shirts</a>
-                    <a href="#">Shorts</a>
-                    <a href="#">Pants</a>
-                </div>
-            </div>
-            <img src="Images/Logo1.png" alt="logo">
-
-            
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        </div>
-    </header>
-
-
-    <div style="padding-left:16px">  
-    <main>
-      <div class="w3-row-padding">
-        <div id="mainContent">
-            <div class="floating">
-                <div class="mySlides fade">
-                    <img src="Images/slideshow1.png" alt="main3">
-                </div>
-                <div class="mySlides fade">
-                    <img src="Images/slideshow2.png" alt="main2">
-                </div>
-                <div class="mySlides fade">
-                    <img src="Images/slideshow3.png" alt="main1">
-                </div>
-                <br>
-                <div style="text-align: center;">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>
-            </div>
-            <!--Side text -->
-            <div class="float">
-                <aside class="sidebar">
-                    <h1>Starria<br>Fashion Boutique</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </aside>
-            </div>
-            <form action="Women.html">
-            <button class="shopnow">Shop Now&nbsp;<i class="fa fa-shopping-bag"></i></button>
-        </form>
-        </div>
+  <!--Top Navigation Bar-->
+  <div id="topnav" class="navbar">
+    <a href="#" class="logo">
+      Starria
+      <span style="color:#9a9c84">Apperals</span>
+    </a>
+    <div class="navbar-right menu">
+      <a href="Index.html" class="active"> Home</a>
+      <a href="sale.html">Sales</a>
+      <a href="Women.html">Women</a>
+      <a href="Men.html">Men</a>
+      <a href="Login.html">Log In</a>
+      <a href="Contact.html">Contact</a>
+    </div>
+    <div class="navbar-right">
+      <a href="javascript:void(0);" class="icon" onclick="showMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+  
+  <div id="slideshow-container" class="slideshow-container">
+    <div class="slide-item bgimg fade" style="background-image: url('Images/slideshow1.png');">
+      <div class="caption">
+        <h2>
+          Sales is here
+        </h2>
+        <p>
+          Get up to 50% off items. Discount will be applied during checkout!
+        </p>
+        <button>
+          <a href="sale.html" style="text-decoration: none;">Order Now</a>
+        </button>
       </div>
-    </main>
+    </div>
+  
+    <div class="slide-item bgimg fade" style="background-image: url('Images/slideshow4.png');">
+      <div class="caption">
+        <h2>
+          Women
+        </h2>
+        <p>
+          Women's apparel encompasses a diverse range of clothing styles, from casual everyday wear to elegant formal attire, often reflecting cultural influences, seasonal trends, and individual expressions of personal style.
+        </p>
+        <button>
+          <a href="Women.html" style="text-decoration: none;">Shop Now</a>
+        </button>
+      </div>
+    </div>
+  
+    <div class="slide-item bgimg fade" style="background-image: url('Images/slideshow3.png');">
+      <div class="caption">
+        <h2>
+          Men
+        </h2>
+        <p>
+          Men's apparel encompasses a diverse range of clothing, from tailored suits to casual wear, reflecting individual style and evolving fashion trends.
+        </p>
+        <button>
+          <a href="Men.html">Shop Now</a>
+        </button>
+      </div>
     </div>
 
-    <footer style="background-color: #9a9c84;">
-        <div class="w3-row-padding">
-        <div id="footerContent">
-            <div class="align">
-                <strong style="color: #f9f5e7;">SOCIAL</strong>
-                <p style="font-size: 12px">Social<br><br>Blog<br><br>Responsibility</p>
-            </div>
-            <div class="align">
-                <strong style="color: #f9f5e7;">CUSTOMER CARE</strong>
-                <p style="font-size: 12px ">Shipping Info<br><br>Returns<br><br>Track Orders<br><br>Size Guide</p>
-            </div>
-            <div class="align">
-                <strong style="color: #f9f5e7;">GET SOCIALS</strong>
-		        <br>
-		        <br>
-		        <i class="fa fa-facebook-square"></i>
-		        <i class="fa fa-instagram"></i>
-		        <i class="fa fa-twitter-square"></i>
-		        <i class="fa fa-pinterest-square"></i>
-                <br><br>
-                <div class="inputContainer">
-                    <strong style="color: #f9f5e7;">Email</strong> &nbsp; <i class="fa fa-envelope"></i>
-                    <br>
-                    <br>
-                    <input class="input-field" type="text" placeholder="Email" name="email">&nbsp;<button class="go" type="submit" formaction="Index.html"><i class="fa fa-paper-plane"></i> </button>
-                </div>
-            </div>
-            <div class="align">
-                <strong style="color: #f9f5e7;">WE ACCEPT :</strong>
-                <br>
-                <br>
-		        <i class="fa fa-cc-visa"></i>
-		        <i class="fa fa-credit-card"></i>
-		        <i class="fa fa-credit-card-alt"></i>
-            </div>
-            <div class="align">
-                <strong>APP:</strong>
-                <br><br>
-                <i class="fa fa-android"></i>
-                <i class="fa fa-apple"></i>
-            </div>
-        </div>
+  
+    <div id="slide-control" class="slide-control">
+      <span class="dot" onclick="chooseSlide(0)"></span>
+      <span class="dot" onclick="chooseSlide(1)"></span>
+      <span class="dot" onclick="chooseSlide(2)"></span>
     </div>
-    </footer>
-    
+  </div>
+  
 <!--Linking js to html-->
 <script src="script.js"></script>
 </body>

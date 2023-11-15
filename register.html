@@ -9,91 +9,113 @@
     <!--link to google fonts (side bar)-->
     <link href='https://fonts.googleapis.com/css?family=Alkatra' rel='stylesheet'>
     <!--Link responsive with w3 external style sheet-->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <title>Home</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title> Register | Starria </title>
 </head>
-
 <body>
     <header>
-        <div class="topnav" id="myTopnav">
-            <img src="Images/logo.png" alt="logo">
-            <!--Js for responsive nav bar (into menu icon)-->
-            <a href="Login.html">Log In</a>
-            <a href="Contact.html">Contact Us</a>
-            <!--dropdown nav bar-->
-            <div class="dropdown">
-                <form action="Women.html">
-                <button class="dropbtn">Women &nbsp;<i class="fa fa-caret-down"></i></button>
-                </form>
-                <div class="dropContent">
-                    <a href="#">Dresses</a>
-                    <a href="#">Tops</a>
-                    <a href="#">Pants</a>
+        <nav>
+            <div class="nav-bar">
+                <i class='bx bx-menu sidebarOpen' ></i>
+                <span class="logo navLogo"><a href="Index.html">StarriaApperals</a></span>
+                <div class="menu">
+                    <div class="logo-toggle">
+                        <span class="logo"><a href="Index.html">StarriaApperals</a></span>
+                        <i class='bx bx-x siderbarClose'></i>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="Index.html">Home</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="Women.html">Women</a></li>
+                        <li><a href="menswear.html">Men</a></li>
+                        <li><a href="Login.html">Log In</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="darkLight-searchBox">
+                    <div class="dark-light">
+                        <i class='bx bx-moon moon'></i>
+                        <i class='bx bx-sun sun'></i>
+                    </div>
+                    <div class="searchBox">
+                       <div class="searchToggle">
+                        <i class='bx bx-x cancel'></i>
+                        <i class='bx bx-search search'></i>
+                       </div>
+                        <div class="search-field">
+                            <input type="text" placeholder="Search...">
+                            <i class='bx bx-search'></i>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!--Another dropdown nav btn-->
-            <div class="dropdown">
-                <form action="menswear.html">
-                <button class="dropbtn">Men&nbsp;<i class="fa fa-caret-down"></i></button>
-                </form>
-                <div class="dropContent">
-                    <a href="#">T-Shirts</a>
-                    <a href="#">Shorts</a>
-                    <a href="#">Pants</a>
-                </div>
-            </div>
-            <a href="Index.html">Home</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
-        </div>
+        </nav>
     </header>
 
+    
+<br>
+
     <main>
-
+        
     </main>
-
+    <br>
     <footer style="background-color: #9a9c84;">
-        <div class="w3-row-padding">
-        <div id="footerContent">
-            <div class="align">
-                <strong style="color: #f9f5e7;">SOCIAL</strong>
-                <p style="font-size: 12px">Social<br><br>Blog<br><br>Responsibility</p>
-            </div>
-            <div class="align">
-                <strong style="color: #f9f5e7;">CUSTOMER CARE</strong>
-                <p style="font-size: 12px ">Shipping Info<br><br>Returns<br><br>Track Orders<br><br>Size Guide</p>
-            </div>
-            <div class="align">
-                <strong style="color: #f9f5e7;">GET SOCIALS</strong>
-		        <br>
-		        <br>
-		        <i class="fa fa-facebook-square"></i>
-		        <i class="fa fa-instagram"></i>
-		        <i class="fa fa-twitter-square"></i>
-		        <i class="fa fa-pinterest-square"></i>
-                <br><br>
-                <div class="inputContainer">
-                    <strong style="color: #f9f5e7;">Email</strong> &nbsp; <i class="fa fa-envelope"></i>
-                    <br>
-                    <br>
-                    <input class="input-field" type="text" placeholder="Email" name="email">&nbsp;<button class="go" type="submit" formaction="Index.html"><i class="fa fa-paper-plane"></i> </button>
+        <section class="footer">
+            <div class="footer-row">
+              <div class="footer-col">
+                <h4>Info</h4>
+                <ul class="links">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Compressions</a></li>
+                  <li><a href="#">Customers</a></li>
+                  <li><a href="#">Service</a></li>
+                  <li><a href="#">Collection</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>Explore</h4>
+                <ul class="links">
+                  <li><a href="#">Free Designs</a></li>
+                  <li><a href="#">Latest Designs</a></li>
+                  <li><a href="#">Themes</a></li>
+                  <li><a href="#">Popular Designs</a></li>
+                  <li><a href="#">Art Skills</a></li>
+                  <li><a href="#">New Uploads</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>Legal</h4>
+                <ul class="links">
+                  <li><a href="#">Customer Agreement</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">GDPR</a></li>
+                  <li><a href="#">Security</a></li>
+                  <li><a href="#">Testimonials</a></li>
+                  <li><a href="#">Media Kit</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p>
+                  Subscribe to our newsletter for a weekly dose
+                  of news, updates, helpful tips, and
+                  exclusive offers.
+                </p>
+                <form action="#">
+                  <input type="text" placeholder="Your email" required>
+                  <button type="submit">SUBSCRIBE</button>
+                </form>
+                <div class="icons">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                  <i class="fa-brands fa-github"></i>
                 </div>
+              </div>
             </div>
-            <div class="align">
-                <strong style="color: #f9f5e7;">WE ACCEPT :</strong>
-                <br>
-                <br>
-		        <i class="fa fa-cc-visa"></i>
-		        <i class="fa fa-credit-card"></i>
-		        <i class="fa fa-credit-card-alt"></i>
-            </div>
-            <div class="align">
-                <strong>APP:</strong>
-                <br><br>
-                <i class="fa fa-android"></i>
-                <i class="fa fa-apple"></i>
-            </div>
-        </div>
-    </div>
+          </section>
     </footer>
     
 <!--Linking js to html-->
