@@ -1,54 +1,44 @@
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
 
-var slideIndex = 0;
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
 
-var timer = setInterval(showSlide, 2000);
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
 
-var slideContainer = document.getElementById('slideshow-container');
-var slideControl = document.getElementById('slide-control');
 
-slideContainer.onmouseover = function() {
-  clearInterval(timer);
-}
+      // Select relevant HTML elements
+      const filterButtons = document.querySelectorAll("#filter-buttons button");
+      const filterableCards = document.querySelectorAll("#filterable-cards .card");
+      
+      // Function to filter cards based on filter buttons
+      const filterCards = (e) => {
+          document.querySelector("#filter-buttons .active").classList.remove("active");
+          e.target.classList.add("active");
+      
+          filterableCards.forEach(card => {
+              // show the card if it matches the clicked filter or show all cards if "all" filter is clicked
+              if(card.dataset.name === e.target.dataset.filter || e.target.dataset.filter === "all") {
+                  return card.classList.replace("hide", "show");
+              }
+              card.classList.add("hide");
+          });
+      }
+      
+      filterButtons.forEach(button => button.addEventListener("click", filterCards));
 
-slideControl.onmouseover = function() {
-  clearInterval(timer);
-}
 
-slideContainer.onmouseleave = function() {
-  timer = setInterval(showSlide, 2000);
-}
-
-slideControl.onmouseleave = function() {
-  timer = setInterval(showSlide, 2000);
-}
-
-function showSlide() {
-  var i;
-  var slides = document.getElementsByClassName('slide-item');
-  var dots = document.getElementsByClassName('dot');
-  for (var i = 0; i < slides.length; i++) {
-    slides[i].style.display = 'none';
-  }
-  for (var i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) slideIndex = 1;
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-}
-
-function chooseSlide(n) {
-  slideIndex = n;
-  showSlide();
-  clearInterval(timer);
-}
-
-function showMenu() {
-  var topNav = document.getElementById('topnav');
-  if (topNav.className === "navbar") {
-    topNav.className += " show";
-  } else {
-    topNav.className = "navbar";
-  }
-}
+      function show(){
+        var pswrd = document.getElementById('pswrd');
+        var icon = document.querySelector('.fas');
+        if (pswrd.type === "password") {
+         pswrd.type = "text";
+         pswrd.style.marginTop = "20px";
+         icon.style.color = "#7f2092";
+        }else{
+         pswrd.type = "password";
+         icon.style.color = "grey";
+        }
+       }     

@@ -1,216 +1,455 @@
-:root {
-	--green: #9a9c84;
-	--text:#f9f3e7;
-	--dark: #023030;
+/* Importing Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
-
-body, html {
-	font-family: 'Ubuntu', sans-serif;
-	margin: 0;
-	height: 100%;
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: #9a9c84 ;
 }
 
-.navbar {
-	background-color: transparent;
-	padding: 30px 10px;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
-	max-width: 1366px;
-	z-index: 99;
-}
 
-.navbar a {
-	float: left;
-	color: var(--text);
-	text-align: center;
-	text-decoration: none;
-	font-size: 18px;
-	font-weight: bold;
-	line-height: 25px;
-	padding: 12px;
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .navbar .logo {
-	font-size: 35px;
-	font-weight: bold;
-	text-transform: uppercase;
+  color: #023030;
+  font-weight: 600;
+  font-size: 2.1rem;
+  text-decoration: none;
 }
 
-.navbar-right a:hover {
-	color: var(--green);
+.navbar .logo span {
+  color: #f9f3e7;
 }
 
-.navbar-right a {
-	transition: color 0.5s ease;
+.navbar .menu-links {
+  display: flex;
+  list-style: none;
+  gap: 40px;
 }
 
-.navbar-right {
-	float: right;
+.navbar a {
+  color: #023030;
+  text-decoration: none;
+  transition: 0.2s ease;
 }
 
-.navbar .icon {
-	display: none;
+.navbar a:hover {
+  color: #f9f3e7;
 }
 
-.slideshow-container {
-	position: relative;
-	height: 100%;
+.hero-section {
+
+  height: 100vh;
+  background-image: url("Images/Untitled\ design\ \(1\).png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 30px 20px;
 }
 
-.slide-item {
-	display: none;
+.hero-section .content {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  color: #023030;
 }
 
-.bgimg {
-	height: 100%;
-	position: relative;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+.hero-section .content h1 {
+  font-family: "Sofia", sans-serif;
+  font-size: 4rem;
+  max-width: 600px;
+  line-height: 70px;
 }
 
-.bgimg::after {
-	content: '\A';
-	position: absolute;
+.hero-section .content p {
+  font-weight: 500;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+.hero-section .content button {
+  background: #9a9c84;
+  padding: 12px 30px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  margin-top: 38px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.hero-section .content button:hover {
+  color: #9a9c84;
+  background: #023030;
+}
+
+#close-menu-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+#hamburger-btn {
+  color: #023030;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 10px;
+  }
+
+  header.show-mobile-menu::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+  }
+
+  .navbar .logo {
+    font-size: 1.7rem;
+  }
+
+    
+  #hamburger-btn, #close-menu-btn {
+    display: block;
+  }
+
+  .navbar .menu-links {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background: #9a9c84;
+    flex-direction: column;
+    padding: 70px 40px 0;
+    transition: left 0.2s ease;
+    
+  }
+
+  header.show-mobile-menu .navbar .menu-links {
+    left: 0;
+  }
+
+  .navbar a {
+    color: #023030;
+  }
+  .navbar a:hover {
+    color: #f9f3e7;
+  }
+
+  .hero-section .content {
+    text-align: center;
+  }
+
+  .hero-section .content :is(h2, p) {
+    max-width: 100%;
+  }
+
+  .hero-section .content h2 {
+    font-size: 2.3rem;
+    line-height: 60px;
+  }
+  
+  .hero-section .content button {
+    padding: 9px 18px;
+  }
+
+}
+
+/* 2nd main content */
+/* Importing Google font - Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: #f9f3e7;
+}
+
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    max-width: 1250px;
+    margin: 150px auto;
+    padding: 20px;
+    gap: 40px;
+}
+
+.card-list .card-item {
+    background: #fff;
+    padding: 26px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+    list-style: none;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: border 0.5s ease;
+}
+
+.card-list .card-item:hover {
+    border: 2px solid #9a9c84;
+}
+
+.card-list .card-item img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.card-list span {
+    display: inline-block;
+    background: #F7DFF5;
+    margin-top: 32px;
+    padding: 8px 15px;
+    font-size: 0.75rem;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.card-list .developer {
+    background-color: #F7DFF5; 
+    color: #B22485;
+}   
+
+.card-list .designer {
+    background-color: #d1e8ff;
+    color: #2968a8;
+}
+
+.card-list .editor {
+    background-color: #d6f8d6; 
+    color: #205c20;
+}
+
+.card-item h3 {
+    color: #023030;
+    font-size: 1.438rem;
+    margin-top: 28px;
+    font-weight: 600;
+}
+
+.card-item .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-35deg);
+    height: 40px;
+    width: 40px;
+    color: #023030;
+    border: 1px solid #9a9c84;
+    border-radius: 50%;
+    margin-top: 40px;
+    transition: 0.2s ease;
+}
+
+.card-list .card-item:hover .arrow  {
+    background: #9a9c84;
+    color: #f9f3e7; 
+}
+
+@media (max-width: 1200px) {
+    .card-list .card-item {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .card-list {
+        margin: 0 auto;
+    }
+}
+
+/*Footer*/
+footer {
 	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background: rgba(0,0,0,0.4);
+	display: flex;
+	justify-content: center;
+	background: #9a9c84;
+	padding: 20px 0;
+  }
+  footer div {
+	padding: 0 10px;
+	max-width: 1200px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+  }
+  footer span {
+	color: #fff;
+  }
+  footer a {
+	color: #f9f3e7;
+	text-decoration: none;
+	padding: 10px;
+  }
+
+  footer a:hover{
+	color: #023030;
+	transition: 0.2s ease;
+  }
+
+  @media screen and (max-width: 860px) {
+	footer a {
+		height: 10px;
+	  }
+  }
+
+  /* sales content filter*/
+
+.salesImage img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 80%;
+}
+body {
+  background: #f9f3e7 !important;
 }
 
-.caption {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-	z-index: 9;
+body .container {
+  width: 100%;
+  margin: auto;
 }
 
-.caption h2 {
-	color: var(--text);
-	margin-bottom: 50px;
-	text-transform: uppercase;
-	font-size: 70px;
+#filter-buttons button {
+  border-radius: 5px;
+  background: #9a9c84;
+  border-color: transparent;
 }
 
-.caption p {
-	color: var(--text);
-	font-size: 20px;
+#filter-buttons button:hover {
+  background: #f9f3e7;
 }
 
-.caption button {
-	background-color: var(--text);
-	border: 2px solid var(--green);
-	color: var(--green);
-	padding: 10px 40px;
-	font-size: 16px;
-	font-weight: bold;
-	text-transform: uppercase;
-	border-radius: 16px;
-	margin-top: 30px;
-	transition: background-color 0.5s ease, color 0.5s ease;
+#filter-buttons button.active {
+  color: #f9f3e7;
+  background: #9a9c84;
 }
 
-.caption button:hover {
-	cursor: pointer;
-	color: var(--text);
-	background-color: var(--green);
+#filterable-cards .card {
+  width: 12rem;
+  border: 2px solid transparent;
 }
 
-.caption button:focus {
-	outline: none;
+#filterable-cards .card.hide {
+  display: none;
 }
 
-.dot {
-	cursor: pointer;
-	height: 10px;
-	width: 10px;
-	margin: 0 2px;
-	background-color: var(--text);
-	border-radius: 5px;
-	display: inline-block;
-	transition: background-color 0.6s ease, height 0.6s;
+#filterable-cards h6{
+  text-align: center;
+  text-decoration: none;
+
 }
 
-.slide-control {
-	position: absolute;
-	left: 30px;
-	top: 50%;
-	width: 10px;
-	text-align: center;
+#filterable-cards .card-text{
+  text-align: center;
+  text-decoration: none;
 }
 
-.dot:hover {
-	background-color: var(--green);
+#filterable-cards i {
+  color: #9a9c84;
+  text-decoration: none;
 }
 
-.dot.active {
-	background-color: var(--green);
-	height: 60px;
+
+
+@media (max-width: 600px) {
+  #filterable-cards {
+    justify-content: center;
+
+  }
+
+  #filterable-cards .card {
+    display: contents;
+    max-width: 600px;
+    
+  }
 }
 
-/* fade animation */
-
-.fade {
-	animation-name: fade;
-	animation-duration: 5s;
-  /*
-  -webkit-animation-name: fade;
-	-webkit-animation-duration: 5s;
-  */
+input[type=text], select, textarea, input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #9a9c84;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
-@keyframes fade {
-	from {
-		opacity: .4
-	} to {
-		opacity: 1
-	}
+input[type=submit] {
+  background-color: #9a9c84;
+  color: #f9f3e7;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
 }
 
-@-webkit-keyframes fade {
-	from {
-		opacity: .4
-	} to {
-		opacity: 1
-	}
+input[type=submit]:hover {
+  background-color: #023030;
 }
 
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f9f3e7;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-	.navbar {
-		padding: 10px;
-	}
-	
-	.navbar .menu {
-		display: none;
-	}
-
-	.navbar .icon {
-		display: block;
-		position: absolute;
-		top: 13px;
-		right: 13px;
-	}
-
-	.navbar.show {
-		background: var(--dark);
-	}
-
-	.navbar.show .menu {
-		display: block;
-		width: 100%;
-	}
-
-	.navbar.show .menu a {
-		width: 100%;
-	}
-
-
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+  img{
+    width: 100%;
+  }
 }
+

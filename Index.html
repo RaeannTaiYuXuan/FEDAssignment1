@@ -5,91 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <!--linking to another external to get images for ICON-->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
-    <!--link to google fonts (side bar)-->
-    <link href='https://fonts.googleapis.com/css?family=Alkatra' rel='stylesheet'>
-    <!--Link responsive with w3 external style sheet-->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
      
     
     <title>Home | Starria </title>
 </head>
 <body>
   <!--Top Navigation Bar-->
-  <div id="topnav" class="navbar">
-    <a href="#" class="logo">
-      Starria
-      <span style="color:#9a9c84">Apperals</span>
-    </a>
-    <div class="navbar-right menu">
-      <a href="Index.html" class="active"> Home</a>
-      <a href="sale.html">Sales</a>
-      <a href="Women.html">Women</a>
-      <a href="Men.html">Men</a>
-      <a href="Login.html">Log In</a>
-      <a href="Contact.html">Contact</a>
-    </div>
-    <div class="navbar-right">
-      <a href="javascript:void(0);" class="icon" onclick="showMenu()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
-  </div>
-  
-  <div id="slideshow-container" class="slideshow-container">
-    <div class="slide-item bgimg fade" style="background-image: url('Images/slideshow1.png');">
-      <div class="caption">
-        <h2>
-          Sales is here
-        </h2>
-        <p>
-          Get up to 50% off items. Discount will be applied during checkout!
-        </p>
-        <button>
-          <a href="sale.html" style="text-decoration: none;">Order Now</a>
-        </button>
-      </div>
-    </div>
-  
-    <div class="slide-item bgimg fade" style="background-image: url('Images/slideshow4.png');">
-      <div class="caption">
-        <h2>
-          Women
-        </h2>
-        <p>
-          Women's apparel encompasses a diverse range of clothing styles, from casual everyday wear to elegant formal attire, often reflecting cultural influences, seasonal trends, and individual expressions of personal style.
-        </p>
-        <button>
-          <a href="Women.html" style="text-decoration: none;">Shop Now</a>
-        </button>
-      </div>
-    </div>
-  
-    <div class="slide-item bgimg fade" style="background-image: url('Images/slideshow3.png');">
-      <div class="caption">
-        <h2>
-          Men
-        </h2>
-        <p>
-          Men's apparel encompasses a diverse range of clothing, from tailored suits to casual wear, reflecting individual style and evolving fashion trends.
-        </p>
-        <button>
-          <a href="Men.html">Shop Now</a>
-        </button>
-      </div>
-    </div>
+<header>
+  <nav class="navbar">
+    <a class="logo" href="Index.html">Starria<span>.A</span></a>
+    <ul class="menu-links">
+      <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="sale.html">Sales</a></li>
+      <li><a href="Women.html">Women</a></li>
+      <li><a href="Men.html">Men</a></li>
+      <li><a href="Contact.html">Contact Us</a></li>
+      <li><a href="Login.html">Login</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+    <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+  </nav>
+</header>
 
-  
-    <div id="slide-control" class="slide-control">
-      <span class="dot" onclick="chooseSlide(0)"></span>
-      <span class="dot" onclick="chooseSlide(1)"></span>
-      <span class="dot" onclick="chooseSlide(2)"></span>
-    </div>
+
+
+<section class="hero-section">
+  <div class="content">
+    <h1>StarriaApperals</h1>
+    <p>
+      Starria is one and only fashion apperals that give out trendy styles in any form for Women and Men.
+      Fashion is a dynamic form of self-expression, constantly evolving to reflect cultural trends and individual styles.
+    </p>
+    <form action="sale.html">
+    <button>Shop Now</button>
+    </form>
   </div>
+</section>
   
+  <!--2nd main content -->
+  <div class="card-list">
+    <a href="Women.html" class="card-item">
+        <img src="Images/slideshow2.png" alt="women">
+        <span class="developer">Women</span>
+        <h3>Ongoing Sales !! Get up to 50% off your orders.</h3>
+        <div class="arrow">
+            <i class="fas fa-arrow-right card-icon"></i>
+        </div>
+    </a>
+    <a href="Men.html" class="card-item">
+        <img src="Images/slideshow3.png" alt="men">
+        <span class="designer">Men</span>
+        <h3>A whole variety of trendy fashion for MEN. Up to 50% off 2nd purchase!!</h3>
+        <div class="arrow">
+            <i class="fas fa-arrow-right card-icon"></i>
+        </div>
+    </a>
+    <a href="sale.html" class="card-item">
+        <img src="Images/slideshow4.png" alt="sale">
+        <span class="editor">Sale</span>
+        <h3>LIMITED OFFER!! BUY 1 GET 1 FREE !!</h3>
+        <div class="arrow">
+            <i class="fas fa-arrow-right card-icon"></i>
+        </div>
+    </a>
+</div>
+
+<!--Footer-->
+<footer>
+  <div>
+    <span><a href="Index.html">www.StarriaApperals.com</a></span>
+    <span class="link">
+        <a href="Index.html">Home</a>
+        <a href="Contact.html">Contact Us</a>
+        <a href="register.html">Register</a>
+    </span>
+  </div>
+</footer>
+
+
 <!--Linking js to html-->
 <script src="script.js"></script>
 </body>
