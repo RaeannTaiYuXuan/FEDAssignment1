@@ -1,119 +1,158 @@
-/* Importing Google font - Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* Global styling */
+body {
+  background-color: #F6f5f2; /* Set background color for the entire page */
+  min-height: 100vh; /* Set a minimum height of 100% of the viewport height */
+}
 
+/* Styling for the top section */
+.top p {
+  background-color: #c9beb4; /* Set background color for paragraphs within the 'top' class */
+  color: white; /* Set text color to white */
+  padding: 15px; /* Add padding around the paragraphs */
+  text-align: center; /* Center-align text within paragraphs */
+  height: 50px; /* Set a fixed height for paragraphs */
+  font-size: 15px; /* Set font size for paragraphs */
+}
+
+.top a {
+  text-decoration: underline white; /* Add an underline to anchor text and set text color to white (Note: 'underline white' is incorrect, should be 'underline' or 'none') */
+}
+
+.top {
+  margin-bottom: 0; /* Remove bottom margin for elements with the 'top' class */
+  margin: 0; /* Reset margin to zero (Note: Duplicate rule, remove one) */
+  padding: 0; /* Reset padding to zero (Note: Duplicate rule, remove one) */
+}
+
+/* Resetting default styles and setting font */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  margin: 0; /* Reset margin to zero for all elements */
+  padding: 0; /* Reset padding to zero for all elements */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  font-family: 'Poppins', sans-serif; /* Set the default font family for the page */
 }
 
+/* Header styling */
 header {
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px;
-  background-color: #9a9c84 ;
+  top: 0; /* Set the top position to 0 */
+  left: 0; /* Set the left position to 0 */
+  width: 100%; /* Set the width to 100% */
+  background-color: #F6f5f2; /* Set background color for the header */
 }
 
-
+/* Navbar styling */
 header .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center-align items vertically within the navbar */
+  justify-content: space-between; /* Distribute items with maximum space between them */
+  height: 100px; /* Set a fixed height for the navbar */
+  max-width: 1200px; /* Set the maximum width for the navbar */
+  margin: 0 auto; /* Center the navbar horizontally */
+  position: relative; /* Set the position to relative for positioning children elements */
+  z-index: 1000; /* Set the stacking order for the navbar */
+  background-color: #F6f5f2; /* Set background color for the navbar */
 }
 
+/* Logo styling */
 .navbar .logo {
-  color: #023030;
-  font-weight: 600;
-  font-size: 2.1rem;
-  text-decoration: none;
+  color: #D2B48C; /* Set text color for the logo */
+  font-weight: 600; /* Set font weight for the logo */
+  font-size: 2.1rem; /* Set font size for the logo */
+  text-decoration: none; /* Remove underline from the logo text */
 }
 
 .navbar .logo span {
-  color: #f9f3e7;
+  color: #9a9c84; /* Set text color for the span within the logo */
 }
 
+/* Menu links styling */
 .navbar .menu-links {
-  display: flex;
-  list-style: none;
-  gap: 40px;
+  display: flex; /* Use flexbox for layout of menu links */
+  list-style: none; /* Remove default list styles */
+  gap: 40px; /* Set the gap between menu links */
 }
 
 .navbar a {
-  color: #023030;
-  text-decoration: none;
-  transition: 0.2s ease;
+  color: #D2B48C; /* Set text color for menu links */
+  font-weight: bold; /* Set font weight for menu links */
+  text-decoration: none; /* Remove underline from menu links */
+  transition: 0.2s ease; /* Add a smooth transition effect */
 }
 
 .navbar a:hover {
-  color: #f9f3e7;
+  color: #023030; /* Change text color on hover for menu links */
 }
 
+/* Styling for hero section */
 .hero-section {
-
-  height: 100vh;
-  background-image: url("Images/Untitled\ design\ \(1\).png");
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  padding: 30px 20px;
+  height: 100vh; /* Set the height of the hero section to 100% of the viewport height */
+  background-image: url("Images/Untitled\ design\ \(1\).png"); /* Set background image for the hero section */
+  background-position: center; /* Center the background image */
+  background-size: cover; /* Cover the entire hero section with the background image */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center-align items vertically within the hero section */
+  padding: 30px 20px; /* Add padding to the hero section */
 }
 
+/* Content within hero section */
 .hero-section .content {
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
-  color: #023030;
+  max-width: 1200px; /* Set the maximum width for the content within the hero section */
+  margin: 0 auto; /* Center the content horizontally */
+  width: 100%; /* Set the width to 100% */
+  color: #023030; /* Set text color for the content */
 }
 
 .hero-section .content h1 {
-  font-family: "Sofia", sans-serif;
-  font-size: 4rem;
-  max-width: 600px;
-  line-height: 70px;
+  font-family: "Sofia", sans-serif; /* Set font family for the heading */
+  font-size: 4rem; /* Set font size for the heading */
+  max-width: 600px; /* Set the maximum width for the heading */
+  line-height: 70px; /* Set the line height for the heading */
 }
 
 .hero-section .content p {
-  font-weight: 500;
-  max-width: 600px;
-  margin-top: 20px;
+  font-weight: 500; /* Set font weight for paragraphs */
+  max-width: 600px; /* Set the maximum width for paragraphs */
+  margin-top: 20px; /* Add top margin for paragraphs */
 }
 
 .hero-section .content button {
-  background: #9a9c84;
-  padding: 12px 30px;
-  border: none;
-  font-size: 1rem;
-  border-radius: 6px;
-  margin-top: 38px;
-  cursor: pointer;
-  font-weight: 500;
-  transition: 0.2s ease;
+  background: #9a9c84; /* Set background color for the button */
+  padding: 12px 30px; /* Add padding to the button */
+  border: none; /* Remove border from the button */
+  font-size: 1rem; /* Set font size for the button */
+  border-radius: 6px; /* Add border-radius to the button */
+  margin-top: 38px; /* Add top margin for the button */
+  cursor: pointer; /* Set cursor to pointer for the button */
+  font-weight: 500; /* Set font weight for the button */
+  transition: 0.2s ease; /* Add a smooth transition effect */
 }
 
 .hero-section .content button:hover {
-  color: #9a9c84;
-  background: #023030;
+  color: #9a9c84; /* Change text color on hover for the button */
+  background: #F6f5f2; /* Change background color on hover for the button */
 }
 
+/* Mobile menu and hamburger button styling */
 #close-menu-btn {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  cursor: pointer;
-  display: none;
+  position: absolute; /* Set the position to absolute for the close menu button */
+  right: 20px; /* Set the right position for the close menu button */
+  top: 20px; /* Set the top position for the close menu button */
+  cursor: pointer; /* Set cursor to pointer for the close menu button */
+  display: none; /* Initially hide the close menu button */
 }
 
 #hamburger-btn {
-  color: #023030;
-  cursor: pointer;
-  display: none;
+  color: #c9beb4; /* Set text color for the hamburger button */
+  cursor: pointer; /* Set cursor to pointer for the hamburger button */
+  display: none; /* Initially hide the hamburger button */
 }
 
+/* Media queries for responsive design */
+
+/* Mobile view */
+
+
+/* for mobile */
 @media (max-width: 600px) {
   header {
     padding: 10px;
@@ -129,13 +168,17 @@ header .navbar {
     backdrop-filter: blur(5px);
   }
 
+  .navbar {
+    z-index: 1000;
+  }
+
   .navbar .logo {
     font-size: 1.7rem;
   }
 
     
   #hamburger-btn, #close-menu-btn {
-    display: block;
+    display: flex;
   }
 
   .navbar .menu-links {
@@ -144,7 +187,7 @@ header .navbar {
     left: -250px;
     width: 250px;
     height: 100vh;
-    background: #9a9c84;
+    background: white;
     flex-direction: column;
     padding: 70px 40px 0;
     transition: left 0.2s ease;
@@ -156,14 +199,20 @@ header .navbar {
   }
 
   .navbar a {
-    color: #023030;
+    color: #D2B48C;
   }
   .navbar a:hover {
-    color: #f9f3e7;
+    color: #023030;
   }
 
   .hero-section .content {
     text-align: center;
+  }
+
+  .hero-section .content img .footer{
+    width: 100%; /* or a specific width */
+    height: auto;
+    backdrop-filter: blur(5px);
   }
 
   .hero-section .content :is(h2, p) {
@@ -181,243 +230,544 @@ header .navbar {
 
 }
 
-/* 2nd main content */
-/* Importing Google font - Open Sans */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-}
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
 
-body {
-    background: #f9f3e7;
-}
-
-.card-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    max-width: 1250px;
-    margin: 150px auto;
-    padding: 20px;
-    gap: 40px;
-}
-
-.card-list .card-item {
-    background: #fff;
-    padding: 26px;
-    border-radius: 8px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
-    list-style: none;
-    cursor: pointer;
-    text-decoration: none;
-    border: 2px solid transparent;
-    transition: border 0.5s ease;
-}
-
-.card-list .card-item:hover {
-    border: 2px solid #9a9c84;
-}
-
-.card-list .card-item img {
+  header.show-mobile-menu::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
     width: 100%;
-    aspect-ratio: 16/9;
-    border-radius: 8px;
-    object-fit: cover;
-}
+    height: 100%;
+    backdrop-filter: blur(5px);
+  }
 
-.card-list span {
-    display: inline-block;
-    background: #F7DFF5;
-    margin-top: 32px;
-    padding: 8px 15px;
-    font-size: 0.75rem;
-    border-radius: 50px;
-    font-weight: 600;
-}
+  .navbar {
+    z-index: 1000;
+  }
 
-.card-list .developer {
-    background-color: #F7DFF5; 
-    color: #B22485;
-}   
+  .navbar .logo {
+    font-size: 1.7rem;
+  }
 
-.card-list .designer {
-    background-color: #d1e8ff;
-    color: #2968a8;
-}
-
-.card-list .editor {
-    background-color: #d6f8d6; 
-    color: #205c20;
-}
-
-.card-item h3 {
-    color: #023030;
-    font-size: 1.438rem;
-    margin-top: 28px;
-    font-weight: 600;
-}
-
-.card-item .arrow {
+    
+  #hamburger-btn, #close-menu-btn {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: rotate(-35deg);
-    height: 40px;
-    width: 40px;
-    color: #023030;
-    border: 1px solid #9a9c84;
-    border-radius: 50%;
-    margin-top: 40px;
-    transition: 0.2s ease;
-}
-
-.card-list .card-item:hover .arrow  {
-    background: #9a9c84;
-    color: #f9f3e7; 
-}
-
-@media (max-width: 1200px) {
-    .card-list .card-item {
-        padding: 15px;
-    }
-}
-
-@media screen and (max-width: 980px) {
-    .card-list {
-        margin: 0 auto;
-    }
-}
-
-/*Footer*/
-footer {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	background: #9a9c84;
-	padding: 20px 0;
-  }
-  footer div {
-	padding: 0 10px;
-	max-width: 1200px;
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-  }
-  footer span {
-	color: #fff;
-  }
-  footer a {
-	color: #f9f3e7;
-	text-decoration: none;
-	padding: 10px;
   }
 
-  footer a:hover{
-	color: #023030;
-	transition: 0.2s ease;
-  }
-
-  @media screen and (max-width: 860px) {
-	footer a {
-		height: 10px;
-	  }
-  }
-
-  /* sales content filter*/
-
-.salesImage img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  height: 80%;
-}
-body {
-  background: #f9f3e7 !important;
-}
-
-body .container {
-  width: 100%;
-  margin: auto;
-}
-
-#filter-buttons button {
-  border-radius: 5px;
-  background: #9a9c84;
-  border-color: transparent;
-}
-
-#filter-buttons button:hover {
-  background: #f9f3e7;
-}
-
-#filter-buttons button.active {
-  color: #f9f3e7;
-  background: #9a9c84;
-}
-
-#filterable-cards .card {
-  width: 12rem;
-  border: 2px solid transparent;
-}
-
-#filterable-cards .card.hide {
-  display: none;
-}
-
-#filterable-cards h6{
-  text-align: center;
-  text-decoration: none;
-
-}
-
-#filterable-cards .card-text{
-  text-align: center;
-  text-decoration: none;
-}
-
-#filterable-cards i {
-  color: #9a9c84;
-  text-decoration: none;
-}
-
-
-
-@media (max-width: 600px) {
-  #filterable-cards {
-    justify-content: center;
-
-  }
-
-  #filterable-cards .card {
-    display: contents;
-    max-width: 600px;
+  .navbar .menu-links {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background: white;
+    flex-direction: column;
+    padding: 70px 40px 0;
+    transition: left 0.2s ease;
     
   }
+
+  header.show-mobile-menu .navbar .menu-links {
+    left: 0;
+  }
+
+  .navbar a {
+    color: #D2B48C;
+  }
+  .navbar a:hover {
+    color: #023030;
+  }
+
+  .hero-section .content {
+    text-align: center;
+  }
+
+  .hero-section .content img .footer{
+    width: 100%; /* or a specific width */
+    height: auto;
+    backdrop-filter: blur(5px);
+  }
+
+  .hero-section .content :is(h2, p) {
+    max-width: 100%;
+  }
+
+  .hero-section .content h2 {
+    font-size: 2.3rem;
+    line-height: 60px;
+  }
+  
+  .hero-section .content button {
+    padding: 9px 18px;
+  }
+
 }
 
-input[type=text], select, textarea, input[type=email] {
+
+@media (max-width: 1024px) {
+  header {
+    padding: 10px;
+  }
+
+  header.show-mobile-menu::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+  }
+
+  .navbar {
+    z-index: 1000;
+  }
+
+  .navbar .logo {
+    font-size: 1.7rem;
+  }
+
+    
+  #hamburger-btn, #close-menu-btn {
+    display: flex;
+  }
+
+  .navbar .menu-links {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background: white;
+    flex-direction: column;
+    padding: 70px 40px 0;
+    transition: left 0.2s ease;
+    
+  }
+
+  header.show-mobile-menu .navbar .menu-links {
+    left: 0;
+  }
+
+  .navbar a {
+    color: #D2B48C;
+  }
+  .navbar a:hover {
+    color: #023030;
+  }
+
+  .hero-section .content {
+    text-align: center;
+  }
+
+  .hero-section .content img .footer{
+    width: 100%; /* or a specific width */
+    height: auto;
+    backdrop-filter: blur(5px);
+  }
+
+  .hero-section .content :is(h2, p) {
+    max-width: 100%;
+  }
+
+  .hero-section .content h2 {
+    font-size: 2.3rem;
+    line-height: 60px;
+  }
+  
+  .hero-section .content button {
+    padding: 9px 18px;
+  }
+
+}
+/* for laptop 1440px */ 
+
+/* for desktop 2560px */
+
+/* 2nd main content */
+/* Importing Google font - Open Sans */
+
+/* Card for index */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.card_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.cardGal {
+  width: 350px;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 35px;
+}
+
+.cardGal img {
   width: 100%;
-  padding: 12px;
-  border: 1px solid #9a9c84;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+  height: 55%;
+}
+
+.card_content {
+  padding: 20px;
+  text-align: center;
+}
+
+.card_content h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.card_content p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.card_content .btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #9a9c84;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 16px;
+  color: white;
+}
+
+@media (max-width:600px){
+  .cardGal {
+    width: 100%; /* Make the card take up full width on smaller screens */
+    margin: 15px 0; /* Remove horizontal margin and add vertical margin */
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cardGal {
+    width: 100%; /* Make the card take up full width on smaller screens */
+    margin: 15px 0; /* Remove horizontal margin and add vertical margin */
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .cardGal {
+    width: 100%; /* Make the card take up full width on smaller screens */
+    margin: 15px 0; /* Remove horizontal margin and add vertical margin */
+  }
+}
+
+
+
+
+
+/* New footer terying out */
+
+.footer {
+  position: flex; /* Adjust this if needed */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 1280px;
+  width: 100%;
+  background: #c9beb4;
+  margin-top: auto;
+  backdrop-filter: blur(5px);
+  z-index: 1; /* Set a lower z-index */
+  
+}
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3.5rem;
+  padding: 60px;
+}
+.footer-row .footer-col h4 {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.footer-col .links {
+  margin-top: 20px;
+}
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.footer-col .links li a {
+  text-decoration: none;
+  color: #023030;
+}
+.footer-col .links li a:hover {
+  color: white;
+}
+.footer-col p {
+  margin: 20px 0;
+  color: #023030;
+  max-width: 300px;
+}
+
+.footer-col .icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+.footer-col .icons i {
+  color: white;
+}
+#fb {
+  background-color: #9a9c84;
+  padding: 20px 20px ;
+  border-radius: 10% 30% 50% 70%;
+}
+
+#tw {
+  background-color: #9a9c84;
+  padding: 20px 20px ;
+  border-radius: 10% 30% 50% 70%;
+}
+
+#lk {
+  background-color: #9a9c84;
+  padding: 20px 20px ;
+  border-radius: 10% 30% 50% 70%;
+}
+
+#gh {
+  background-color: #9a9c84;
+  padding: 20px 20px ;
+  border-radius: 10% 30% 50% 70%;
+}
+.footer-col .icons i:hover  {
+  color: white;
+}
+@media (max-width: 600px) {
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+    backdrop-filter: blur(5px);
+  }
+  .footer .footer-row {
+    padding: 20px;
+    gap: 1rem;
+  }
+  .footer-col form {
+    display: block;
+  }
+  .footer-col form :where(input, button) {
+    width: 100%;
+  }
+  .footer-col form button {
+    margin: 10px 0 0 0;
+  }
+}
+/* tablets */
+@media (max-width: 768px) {
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+    backdrop-filter: blur(5px);
+  }
+  .footer .footer-row {
+    padding: 20px;
+    gap: 1rem;
+  }
+  .footer-col form {
+    display: block;
+  }
+  .footer-col form :where(input, button) {
+    width: 100%;
+  }
+  .footer-col form button {
+    margin: 10px 0 0 0;
+  }
+}
+
+/* large screen */
+@media (max-width: 1024px) {
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+    backdrop-filter: blur(5px);
+  }
+  .footer .footer-row {
+    padding: 20px;
+    gap: 1rem;
+  }
+  .footer-col form {
+    display: block;
+  }
+  .footer-col form :where(input, button) {
+    width: 100%;
+  }
+  .footer-col form button {
+    margin: 10px 0 0 0;
+  }
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
+  border: 1px solid #023030;
+  border-radius: 8px;
+}
+
+.filter-buttons {
+  text-align: center;
+  margin: 20px;
+}
+
+.filter-buttons button {
+  margin: 5px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+
+
+ /*contact */
+.containerC {
+  display:flex;
+  justify-content: center;
+}
+.column h1 {
+  text-align: center;
+  font-weight: bold;
+}
+.column h4 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.textmessage a {
+  display: block;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 1px;
+  border: none;
+  background: #9a9c84;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 15px 20px;
+  margin: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #333;
+  border: 1.5px solid #C7BEBE;
+  border-bottom-width: 2.5px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+
+}
+.column p {
+  text-align: center;
+  font-size: 15px;
+}
+.column label {
+  margin: 10px;
+  font-weight: bold;
+}
+
+input[type=text], select, textarea, input[type=email], input[type=password] {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  margin: 10px;
+  padding: 15px 20px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+  border: 1.5px solid #C7BEBE;
+  border-bottom-width: 2.5px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
 
 input[type=submit] {
-  background-color: #9a9c84;
+  background-color: #7a816e;
   color: #f9f3e7;
   padding: 12px 20px;
   border: none;
   cursor: pointer;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  margin: 10px;
+  padding: 15px 20px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+  border: 1.5px solid #C7BEBE;
+  border-bottom-width: 2.5px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
 
 input[type=submit]:hover {
-  background-color: #023030;
+  background-color: #c9beb4;
+}
+
+.input-box.button button{
+  color: #fff;
+  letter-spacing: 1px;
+  border: none;
+  background: #7a816e;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 15px 20px;
+  margin: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #333;
+  border: 1.5px solid #C7BEBE;
+  border-bottom-width: 2.5px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+.input-box.button button:hover{
+  background: #c9beb4;
+  
+}
+
+.column img {
+  width: 100%;
+  height: 700px;
 }
 
 /* Style the container/contact section */
@@ -442,6 +792,40 @@ input[type=submit]:hover {
   clear: both;
 }
 
+form .policy{
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+form h3{
+  color: #707070;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.input-box input:focus,
+.input-box input:valid{
+  border-color: #7a816e;
+}
+
+#textField {
+  text-align: center;
+   font-weight: bold;
+}
+
+form .text h3{
+  color: #333;
+  width: 100%;
+  text-align: center;
+  font-size: 17px;
+ }
+ form .text h3 a{
+   color: #023030;
+   text-decoration: none;
+ }
+ form .text h3 a:hover{
+   text-decoration: underline;
+ }
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column, input[type=submit] {
@@ -452,4 +836,559 @@ input[type=submit]:hover {
     width: 100%;
   }
 }
+
+/* tablet */
+@media screen and (max-width: 768px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+  img{
+    width: 100%;
+  }
+}
+
+/* larger screen  */
+@media screen and (max-width: 1024px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+  img{
+    width: 100%;
+  }
+}
+
+/* contact de  */
+
+.gallery-container {
+  display: flex;
+  justify-content: space-evenly;
+   /* Border outside the gallery container */
+  padding: 20px; /* Optional: Add padding for better spacing */
+  max-width: 1600px; /* Adjust the maximum width of the gallery container */
+  margin: 10px auto; /* Center the gallery container on the page */
+}
+
+.gallery-item {
+  margin: 20px;
+  padding: 10px 10px; /* Optional: Add padding for space between image and border */
+}
+
+.gallery-item img {
+  width: 200px;
+  height: 100%;
+  max-width: 1000px;
+  border-radius: 8px;
+  border: 2px solid #023030; /* Border for each image */
+}
+
+.gallery-item img:hover {
+  border:2px solid white;
+}
+.gallery-item a:hover {
+  border:2px solid white;
+}
+
+.gallery-item a {
+  border: 2px solid #023030;
+  background-color: #c9beb4;
+}
+
+@media (max-width:600px) {
+  .gallery-container {
+    flex-direction: column; /* Change to a single column layout on small screens */
+    align-items: center; /* Center items in the column */
+  }
+
+  .gallery-item {
+    width: 100%; /* Take the full width of the container on small screens */
+    margin-bottom: 20px; /* Optional: Add spacing between items in the column */
+  }
+  
+}
+
+/* tablets */
+@media (max-width:768px) {
+  .gallery-container {
+    flex-direction: column; /* Change to a single column layout on small screens */
+    align-items: center; /* Center items in the column */
+  }
+
+  .gallery-item {
+    width: 100%; /* Take the full width of the container on small screens */
+    margin-bottom: 20px; /* Optional: Add spacing between items in the column */
+  }
+  
+}
+
+/* larger screen  */
+@media (max-width:1024px) {
+  .gallery-container {
+    flex-direction: column; /* Change to a single column layout on small screens */
+    align-items: center; /* Center items in the column */
+  }
+
+  .gallery-item {
+    width: 100%; /* Take the full width of the container on small screens */
+    margin-bottom: 20px; /* Optional: Add spacing between items in the column */
+  }
+  
+}
+
+*,
+*:before,
+*:after{
+    padding: 0;
+    
+    box-sizing: border-box;
+}
+.popup{
+    background-color: #FFF5EE;
+    width: 50%;
+    height: 400px;
+    padding: 30px 40px;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 5px;
+    
+    display: none; 
+    text-align: center;
+}
+.popup button{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #ffffff;
+    background: #7a816e;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.popup h2{
+  margin-top: -20px;
+  font-weight: bold;
+  font-size: 50px;
+}
+.popup p{
+    font-size: 20px;
+    text-align: center;
+    margin: 30px 0;
+    line-height: 25px;
+}
+.popup a{
+    display: block;
+    width: 150px;
+    position: relative;
+    margin: 50px auto;
+    text-align: center;
+    background-color: #7a816e;
+    border-radius: 20px;
+    color: #f9f3e7;
+    text-decoration: none;
+    padding: 8px 0;
+}
+
+
+form .text h3{
+ color: #333;
+ width: 100%;
+ text-align: center;
+}
+form .text h3 a{
+  color: #023030;
+  text-decoration: none;
+}
+form .text h3 a:hover{
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .popup {
+    width: 90%; /* Adjust the width for smaller screens */
+}
+
+.popup h2 {
+    font-size: 40px; /* Adjust the font size for smaller screens */
+}
+
+.popup p {
+    font-size: 16px; /* Adjust the font size for smaller screens */
+}
+}
+
+/* tablets */
+@media (max-width: 768px) {
+  .popup {
+    width: 90%; /* Adjust the width for smaller screens */
+}
+
+.popup h2 {
+    font-size: 40px; /* Adjust the font size for smaller screens */
+}
+
+.popup p {
+    font-size: 16px; /* Adjust the font size for smaller screens */
+}
+}
+
+@media (max-width: 1024px) {
+  .popup {
+    width: 90%; /* Adjust the width for smaller screens */
+}
+
+.popup h2 {
+    font-size: 40px; /* Adjust the font size for smaller screens */
+}
+
+.popup p {
+    font-size: 16px; /* Adjust the font size for smaller screens */
+}
+}
+
+
+/* for men header */
+.men {
+  display: flex;
+  align-items: center; 
+  padding: 20px 20px;/* Center items vertically within the flex container */
+}
+
+.men h2 {
+  margin-right: 36%;
+  text-align: center; 
+  padding: 20px 20px;
+  font-size: 15px;/* Add some space between the two elements */
+}
+
+.men h1{
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  
+}
+
+.men a {
+  margin-left: 36%;
+  text-decoration: none;
+  color: #023030;
+}
+
+
+/* for sale header */
+.sale {
+  display: flex;
+  align-items: center; 
+  padding: 20px 20px;/* Center items vertically within the flex container */
+}
+
+.sale h2 {
+  margin-right: 36%;
+  text-align: center; 
+  padding: 20px 20px;
+  font-size: 15px;/* Add some space between the two elements */
+}
+
+.sale h1{
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  
+}
+
+.sale a {
+  margin-left: 38%;
+  text-decoration: none;
+  color: #023030;
+}
+/* text for women */
+.women {
+  display: flex;
+  align-items: center; 
+  padding: 20px 20px;/* Center items vertically within the flex container */
+}
+
+.women h2 {
+  margin-right: 32%;
+  text-align: center; 
+  padding: 20px 20px;
+  font-size: 15px;/* Add some space between the two elements */
+}
+
+.women h1{
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  
+}
+
+.women a {
+  margin-left: 36%;
+  text-decoration: none;
+  color: #023030;
+}
+
+
+
+
+
+/*trying out filter*/
+.ImageFilter {
+  position: relative;
+  max-width: 2000px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  
+}
+.filter_buttons{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+  margin: 10px 10px;
+  
+}
+.filter-buttons button:hover {
+  background-color: #9a9c84;
+  color: #f9f3e7;
+}
+
+.ImageFilter button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background: white;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  
+
+}
+.ImageFilter button.active {
+  background-color: #9a9c84;
+  color: white;
+}
+
+.filterable_cards {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  gap: 20px;
+  flex-wrap: wrap; /*make it another row*/
+  
+}
+.card {
+  flex-basis: 300px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+.card:hover{
+  border: 2px solid #023030;
+}
+.card img {
+  width: 100%;
+  border-radius: 8px 8px 8px 8px;
+  object-fit: cover;
+  
+}
+.card.hide {
+  display: none;
+}
+.cardbody{
+  padding: 15px 20px 20px;
+}
+.cardtitle{
+  font-size: 20px;
+  font-weight: bold;
+  color: #023030;
+  text-align: center;
+}
+.cardtext{
+  font-size: 20px;
+  color: #023030;
+  text-align: center;
+}
+.cardtext a {
+  text-decoration: none;
+  color: white;
+  background-color: #9a9c84;
+  padding: 10px 20px;
+  border-radius: 8px;
+
+}
+
+/* for mobile */
+@media (max-width: 600px) {
+  .filterable_cards {
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+
+  }
+
+  .filter_buttons {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .sale {
+    flex-direction: column;  /* Stack items vertically on smaller screens */
+     /* Center text within the container */
+  }
+
+  .sale h2,
+  .sale a {
+    margin: 0;/* Remove margins for better spacing on smaller screens */
+  }
+  .women {
+    flex-direction: column;  /* Stack items vertically on smaller screens */
+     /* Center text within the container */
+  }
+
+  .women h2,
+  .women a {
+    margin: 0;/* Remove margins for better spacing on smaller screens */
+  }
+
+  .men {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+     /* Center text within the container */
+  }
+
+  .men h2,
+  .men a {
+    margin: 0; /* Remove margins for better spacing on smaller screens */
+  }
+ 
+}
+
+
+
+
+/* For tablets */
+@media (max-width: 768px) {
+  .filterable_cards {
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+
+  }
+
+  .filter_buttons {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .women {
+    display: flex;
+    align-items: center;
+    
+  }
+  .women h2 {
+    margin-right: 35%;
+    text-align: center; 
+    padding: 5px 0;
+    font-size: 12.5px;/* Add some space between the two elements */
+  }
+
+  .women h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+    
+  }
+  
+  .women a {
+    margin-left: 33%;
+    text-decoration: none;
+    color: #023030;
+    font-size: 12.5px;
+  }
+
+  .sale {
+    display: flex;
+    align-items: center;
+    
+  }
+  .sale h2 {
+    margin-right: 40%;
+    text-align: center; 
+    padding: 5px 0;
+    font-size: 12.5px;/* Add some space between the two elements */
+  }
+
+  .sale h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+    
+  }
+  
+  .sale a {
+    margin-left: 35%;
+    text-decoration: none;
+    color: #023030;
+    font-size: 12.5px;
+  }
+
+  .men {
+    display: flex;
+    align-items: center;
+    
+  }
+  .men h2 {
+    margin-right: 25%;
+    text-align: center; 
+    padding: 5px 0;
+    font-size: 12.5px;/* Add some space between the two elements */
+  }
+
+  .men h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+    
+  }
+  
+  .men a {
+    margin-left: 25%;
+    text-decoration: none;
+    color: #023030;
+    font-size: 12.5px;
+  }
+
+ 
+}
+
+
+/* welcoming */
+.welcome {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 350px;
+  padding: 20px 20px;
+  text-align: center;
+  background-color: #c9beb4; 
+}
+
+.text {
+
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  
+}
+
+
+/* coupon */
 

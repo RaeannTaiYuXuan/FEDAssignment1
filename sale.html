@@ -10,13 +10,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <script src="script.js" defer></script>
     <title>Sale | Starria</title>
 </head>
-<body>
-    
-  <header style="background-color: #9a9c84;">
-    <nav class="navbar">
+<body style="background-color: #F6f5f2;">
+
+  <div class="top">
+    <a href="register.html"><p>Welcome to Starria, Register now to get 10% off first purchase</p></a>
+  </div> 
+  <header style="background-color: #F6f5f2;">
+    <nav class="navbar" >
       <a class="logo" href="Index.html">Starria<span>.A</span></a>
       <ul class="menu-links">
         <span id="close-menu-btn" class="material-symbols-outlined">close</span>
@@ -33,342 +37,390 @@
   </header>
 
 
-  <div class="salesImage">
-    <img src="Images/Salebanner.png" alt="sale">
-  </div>
+  <hr>
 
   <br>
 
-
-  <!--Main Contetn Sales -->
-  <div class="container">
-    <!-- Images Filter Buttons Section -->
-    <div class="col-md-12 text-center" id="filter-buttons">
-      <div class="col-12">
-        <button class="btn mb-2 me-1 active" data-filter="all">All</button>
-        <button class="btn mb-2 mx-1" data-filter="shirts">T-shirt</button>
-        <button class="btn mb-2 mx-1" data-filter="pant">Pants</button>
-        <button class="btn mb-2 mx-1" data-filter="hoodie">Hoodie</button>
-        <button class="btn mb-2 mx-1" data-filter="dress">Dress</button>
-        <button class="btn mb-2 mx-1" data-filter="blouse">Blouse</button>
-        <button class="btn mb-2 mx-1" data-filter="outerwear">Outerwear</button>
-
-      </div>
-    </div>
-
-    <!-- Filterable Images / Cards Section -->
-
-    <div class="row px-5 mt-5 gap-5 mx-5" id="filterable-cards">
-      <div class="card p-2" data-name="shirts">
-        <img src="Images/shirt1.jpg" alt="img" />
-        <div class="card-body">
-          <h6 class="card-title"> Starria White Button Shirt</h6>
-          <p class="card-text"><a href="Login.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<i class="fa fa-heart"></i></a></p>
-        </div>
-      </div>
-
-      <div class="card p-2" data-name="shirts">
-        <img src="Images/shirt2.jpg" alt="img" />
-        <div class="card-body">
-          <h6 class="card-title">Starria light Khaki T-Shirt</h6>
-          <p class="card-text"><a href="Login.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<i class="fa fa-heart"></i></a></p>
-        </div>
-      </div>
-      <div class="card p-2" data-name="shirts">
-        <img src="Images/shirt3.jpg" alt="img" />
-        <div class="card-body">
-          <h6 class="card-title">Starria Black T-Shirt</h6>
-          <p class="card-text"><a href="Login.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<i class="fa fa-heart"></i></a></p>
-        </div>
-      </div>
-      <div class="card p-2" data-name="shirts">
-        <img src="Images/shirt4.jpg" alt="img" />
-        <div class="card-body">
-          <h6 class="card-title">Starria Dark Blue Button Shirt</h6>
-          <p class="card-text"><a href="Login.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<i class="fa fa-heart"></i></a></p>
-        </div>
-      </div>
-      <div class="card p-2" data-name="shirts">
-        <img src="Images/shirt5.jpg" alt="img" />
-        <div class="card-body">
-          <h6 class="card-title">Starria Textured Button Shirt</h6>
-          <p class="card-text"><a href="Login.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<i class="fa fa-heart"></i></a></p>
-        </div>
-      </div>
-      <div class="card p-2" data-name="shirts">
-        <img src="Images/shirt6.jpg" alt="img" />
-        <div class="card-body">
-          <h6 class="card-title">Starria GreyWash Graphic T-Shirt</h6>
-          <p class="card-text"><a href="Login.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<i class="fa fa-heart"></i></a></p>
-        </div>
-      </div>
-      <!--Dress-->
-
-      <div class="card p-2" data-name="dress">
-        <img src="Images/Wdress1.jpg" alt="img" />
-        <div class="card-body">
-          <h6 class="card-title">Lights</h6>
-          <p class="card-text"><a href="Login.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<i class="fa fa-heart"></i></a></p>
-        </div>
-      </div>
-      
-      <div class="card p-2" data-name="dress">
-        <img src="Images/Wdress2.jpg" alt="img" />
-        <div class="card-body">
-          <h6 class="card-title">Girl</h6>
-          <p class="card-text"><a href="Login.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<i class="fa fa-heart"></i></a></p>
-        </div>
-      </div>
-
-      <div class="card p-2" data-name="dress">
-        <img src="Images/Wdress3.jpg" alt="img" />
-        <div class="card-body">
-          <h6 class="card-title">Girl</h6>
-          <p class="card-text"><a href="Login.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<i class="fa fa-heart"></i></a></p>
-        </div>
-      </div>
-
-      <div class="card p-2" data-name="dress">
-        <img src="Images/Wdress4.jpg" alt="img" />
-        <div class="card-body">
-          <h6 class="card-title">Girl</h6>
-          <p class="card-text"><a href="Login.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<i class="fa fa-heart"></i></a></p>
-        </div>
-      </div>
-
-      <div class="card p-2" data-name="dress">
-        <img src="Images/Wdress5.jpg" alt="img" />
-        <div class="card-body">
-          <h6 class="card-title">Girl</h6>
-          <p class="card-text"><a href="Login.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<i class="fa fa-heart"></i></a></p>
-        </div>
-      </div>
-
-      <div class="card p-2" data-name="dress">
-        <img src="Images/Wdress6.jpg" alt="img" />
-        <div class="card-body">
-          <h6 class="card-title">Girl</h6>
-          <p class="card-text"><a href="Login.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<i class="fa fa-heart"></i></a></p>
-        </div>
-      </div>
-
-      <!--Bottoms-->
-
-      <div class="card p-2" data-name="pant">
-        <img src="Images/Mpant1.jpg" alt="img" />
-        <div class="card-body">
-          <h6 class="card-title">Girl</h6>
-          <p class="card-text"><a href="Login.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<i class="fa fa-heart"></i></a></p>
-        </div>
-      </div>
-
-      <div class="card p-2" data-name="pant">
-        <img src="Images/Mpant2.jpg" alt="img" />
-        <div class="card-body">
-          <h6 class="card-title">Girl</h6>
-          <p class="card-text"><a href="Login.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<i class="fa fa-heart"></i></a></p>
-        </div>
-      </div>
-
-      <div class="card p-2" data-name="pant">
-        <img src="Images/Mpant3.jpg" alt="img" />
-        <div class="card-body">
-          <h6 class="card-title">Girl</h6>
-          <p class="card-text"><a href="Login.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<i class="fa fa-heart"></i></a></p>
-        </div>
-      </div>
-
-      <div class="card p-2" data-name="pant">
-        <img src="Images/Mpant4.jpg" alt="img" />
-        <div class="card-body">
-          <h6 class="card-title">Girl</h6>
-          <p class="card-text"><a href="Login.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<i class="fa fa-heart"></i></a></p>
-        </div>
-      </div>
-
-      <div class="card p-2" data-name="pant">
-        <img src="Images/Mpant5.jpg" alt="img" />
-        <div class="card-body">
-          <h6 class="card-title">Girl</h6>
-          <p class="card-text"><a href="Login.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<i class="fa fa-heart"></i></a></p>
-        </div>
-      </div>
-
-      <div class="card p-2" data-name="pant">
-        <img src="Images/Mpant6.jpg" alt="img" />
-        <div class="card-body">
-          <h6 class="card-title">Girl</h6>
-          <p class="card-text"><a href="Login.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<i class="fa fa-heart"></i></a></p>
-        </div>
-      </div>
-
-
-      <!--Outerwear-->
-      
-      <div class="card p-2" data-name="outerwear">
-        <img src="Images/Wotw1.jpg" alt="img" />
-        <div class="card-body">
-          <h6 class="card-title">Girl</h6>
-          <p class="card-text"><a href="Login.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<i class="fa fa-heart"></i></a></p>
-        </div>
-      </div>
-
-      
-      <div class="card p-2" data-name="outerwear">
-        <img src="Images/Wotw2.jpg" alt="img" />
-        <div class="card-body">
-          <h6 class="card-title">Girl</h6>
-          <p class="card-text"><a href="Login.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<i class="fa fa-heart"></i></a></p>
-        </div>
-      </div>
-
-      
-      <div class="card p-2" data-name="outerwear">
-        <img src="Images/Wotw3.jpg" alt="img" />
-        <div class="card-body">
-          <h6 class="card-title">Girl</h6>
-          <p class="card-text"><a href="Login.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<i class="fa fa-heart"></i></a></p>
-        </div>
-      </div>
-
-      
-      <div class="card p-2" data-name="outerwear">
-        <img src="Images/Wotw4.jpg" alt="img" />
-        <div class="card-body">
-          <h6 class="card-title">Girl</h6>
-          <p class="card-text"><a href="Login.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<i class="fa fa-heart"></i></a></p>
-        </div>
-      </div>
-
-      
-      <div class="card p-2" data-name="outerwear">
-        <img src="Images/Wotw5.jpg" alt="img" />
-        <div class="card-body">
-          <h6 class="card-title">Girl</h6>
-          <p class="card-text"><a href="Login.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<i class="fa fa-heart"></i></a></p>
-        </div>
-      </div>
-
-      
-      <div class="card p-2" data-name="outerwear">
-        <img src="Images/Wotw6.jpg" alt="img" />
-        <div class="card-body">
-          <h6 class="card-title">Girl</h6>
-          <p class="card-text"><a href="Login.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<i class="fa fa-heart"></i></a></p>
-        </div>
-      </div>
-<!--hoodie-->
-      <div class="card p-2" data-name="hoodie">
-        <img src="Images/MSweat1.jpg" alt="img" />
-        <div class="card-body">
-          <h6 class="card-title">Girl</h6>
-          <p class="card-text"><a href="Login.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<i class="fa fa-heart"></i></a></p>
-        </div>
-      </div>
-
-      <div class="card p-2" data-name="hoodie">
-        <img src="Images/MSweat2.jpg" alt="img" />
-        <div class="card-body">
-          <h6 class="card-title">Girl</h6>
-          <p class="card-text"><a href="Login.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<i class="fa fa-heart"></i></a></p>
-        </div>
-      </div>
-
-      <div class="card p-2" data-name="hoodie">
-        <img src="Images/MSweat3.jpg" alt="img" />
-        <div class="card-body">
-          <h6 class="card-title">Girl</h6>
-          <p class="card-text"><a href="Login.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<i class="fa fa-heart"></i></a></p>
-        </div>
-      </div>
-
-      <div class="card p-2" data-name="hoodie">
-        <img src="Images/MSweat4.jpg" alt="img" />
-        <div class="card-body">
-          <h6 class="card-title">Girl</h6>
-          <p class="card-text"><a href="Login.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<i class="fa fa-heart"></i></a></p>
-        </div>
-      </div>
-
-      <div class="card p-2" data-name="hoodie">
-        <img src="Images/MSweat5.jpg" alt="img" />
-        <div class="card-body">
-          <h6 class="card-title">Girl</h6>
-          <p class="card-text"><a href="Login.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<i class="fa fa-heart"></i></a></p>
-        </div>
-      </div>
-
-      <div class="card p-2" data-name="hoodie">
-        <img src="Images/MSweat6.jpg" alt="img" />
-        <div class="card-body">
-          <h6 class="card-title">Girl</h6>
-          <p class="card-text"><a href="Login.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<i class="fa fa-heart"></i></a></p>
-        </div>
-      </div>
-
-      <!--Blouse-->
-      <div class="card p-2" data-name="blouse">
-        <img src="Images/WTop1.jpg" alt="img" />
-        <div class="card-body">
-          <h6 class="card-title">Girl</h6>
-          <p class="card-text"><a href="Login.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<i class="fa fa-heart"></i></a></p>
-        </div>
-      </div>
-
-      <div class="card p-2" data-name="blouse">
-        <img src="Images/WTop2.jpg" alt="img" />
-        <div class="card-body">
-          <h6 class="card-title">Girl</h6>
-          <p class="card-text"><a href="Login.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<i class="fa fa-heart"></i></a></p>
-        </div>
-      </div>
-
-      <div class="card p-2" data-name="blouse">
-        <img src="Images/Wtop3.jpg" alt="img" />
-        <div class="card-body">
-          <h6 class="card-title">Girl</h6>
-          <p class="card-text"><a href="Login.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<i class="fa fa-heart"></i></a></p>
-        </div>
-      </div>
-
-      <div class="card p-2" data-name="blouse">
-        <img src="Images/Wtop4.jpg" alt="img" />
-        <div class="card-body">
-          <h6 class="card-title">Girl</h6>
-          <p class="card-text"><a href="Login.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<i class="fa fa-heart"></i></a></p>
-        </div>
-      </div>
-
-      <div class="card p-2" data-name="blouse">
-        <img src="Images/WTop5.jpg" alt="img" />
-        <div class="card-body">
-          <h6 class="card-title">Girl</h6>
-          <p class="card-text"><a href="Login.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<i class="fa fa-heart"></i></a></p>
-        </div>
-      </div>
-
-      <div class="card p-2" data-name="blouse">
-        <img src="Images/Wtop6.jpg" alt="img" />
-        <div class="card-body">
-          <h6 class="card-title">Girl</h6>
-          <p class="card-text"><a href="Login.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<i class="fa fa-heart"></i></a></p>
-        </div>
-      </div>
-
-    </div>
+  <div class="sale">
+    <h2>Home / Sale </h2>
+    <h1>Sale</h1>
+    <a href="Women.html">Women &nbsp;<i class="fa fa-arrow-right"></i></a>
   </div>
 
 
-  <footer>
-    <div>
-      <span><a href="Index.html">www.StarriaApperals.com</a></span>
-      <span class="link">
-          <a href="Index.html">Home</a>
-          <a href="Contact.html">Contact Us</a>
-          <a href="register.html">Register</a>
-      </span>
+  <!--Main Contetn Sales -->
+  <div class="ImageFilter">
+  <div class="filter-buttons">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('shirts')">T-shirt</button>
+    <button onclick="filterImages('pant')">Pants</button>
+    <button onclick="filterImages('hoodie')">Hoodie</button>
+    <button onclick="filterImages('dress')">Dress</button>
+    <button onclick="filterImages('blouse')">Blouse</button>
+    <button onclick="filterImages('outerwear')">Outerwear</button>
+</div>
+
+    <!-- Filterable Images / Cards Section -->
+
+    <!-- Shirts -->
+<div class="filterable_cards">
+<div class="card" data-name="shirts">
+  <img src="Images/shirt1.jpg" alt="Shirt 1">
+  <div class="cardbody">
+      <h6 class="cardtitle">Casual Shirt</h6><br>
+      <p class="cardtext"><s>$29.99</s> <b style="color: red;">$10.00</b><br><br> <a href="Index.html">Add to Cart</a></p>
+  </div>
+</div>
+
+<div class="card" data-name="shirts">
+  <img src="Images/shirt2.jpg" alt="Shirt 2">
+  <div class="cardbody">
+      <h6 class="cardtitle">Formal Striped Shirt</h6><br>
+      <p class="cardtext"><s>$34.99</s><b style="color: red;">$20.00</b><br><br> <a href="Index.html">Add to Cart</a></p>
+  </div>
+</div>
+
+<!-- Shirts -->
+<div class="card" data-name="shirts">
+  <img src="Images/shirt3.jpg" alt="Shirt 3">
+  <div class="cardbody">
+      <h6 class="cardtitle">Printed Summer Shirt</h6><br>
+      <p class="cardtext"><s>$27.99</s><b style="color: red;">$20.00</b><br><br> <a href="Index.html">Add to Cart</a></p>
+  </div>
+</div>
+
+<div class="card" data-name="shirts">
+  <img src="Images/shirt4.jpg" alt="Shirt 4">
+  <div class="cardbody">
+      <h6 class="cardtitle">Printed Summer Shirt</h6><br>
+      <p class="cardtext"><s>$27.99</s><b style="color: red;">$20.00</b><br><br> <a href="Index.html">Add to Cart</a></p>
+  </div>
+</div>
+
+<div class="card" data-name="shirts">
+  <img src="Images/shirt5.jpg" alt="Shirt 5">
+  <div class="cardbody">
+      <h6 class="cardtitle">Printed Summer Shirt</h6><br>
+      <p class="cardtext"><s>$27.99</s><b style="color: red;">$20.00</b><br><br> <a href="Index.html">Add to Cart</a></p>
+  </div>
+</div>
+
+<div class="card" data-name="shirts">
+  <img src="Images/shirt6.jpg" alt="Shirt 6">
+  <div class="cardbody">
+      <h6 class="cardtitle">Printed Summer Shirt</h6><br>
+      <p class="cardtext"><s>$27.99</s><b style="color: red;">$20.00</b><br><br> <a href="Index.html">Add to Cart</a></p>
+  </div>
+</div>
+
+<!-- Dress -->
+<div class="card" data-name="dress">
+  <img src="Images/Wdress1.jpg" alt="Dress 1">
+  <div class="cardbody">
+      <h6 class="cardtitle">Elegant Evening Dress</h6><br>
+      <p class="cardtext"><s>$79.99</s><b style="color: red;">$60.00</b><br><br> <a href="Index.html">Add to Cart</a></p>
+  </div>
+</div>
+
+<div class="card" data-name="dress">
+  <img src="Images/Wdress2.jpg" alt="Dress 2">
+  <div class="cardbody">
+      <h6 class="cardtitle">Floral Maxi Dress</h6><br>
+      <p class="cardtext"><s>$64.99</s><b style="color: red;">$50.00</b><br><br> <a href="Index.html">Add to Cart</a></p>
+  </div>
+</div>
+
+<div class="card" data-name="dress">
+  <img src="Images/Wdress3.jpg" alt="Dress 3">
+  <div class="cardbody">
+      <h6 class="cardtitle">Cocktail Party Dress</h6><br>
+      <p class="cardtext"><s>$89.99</s><b style="color: red;">$70.00</b><br><br> <a href="Index.html">Add to Cart</a></p>
+  </div>
+</div>
+
+<div class="card" data-name="dress">
+  <img src="Images/Wdress4.jpg" alt="Dress 4">
+  <div class="cardbody">
+      <h6 class="cardtitle">Cocktail Party Dress</h6><br>
+      <p class="cardtext"><s>$89.99</s><b style="color: red;">$70.00</b><br><br> <a href="Index.html">Add to Cart</a></p>
+  </div>
+</div>
+
+<div class="card" data-name="dress">
+  <img src="Images/Wdress5.jpg" alt="Dress 5">
+  <div class="cardbody">
+      <h6 class="cardtitle">Cocktail Party Dress</h6><br>
+      <p class="cardtext"><s>$89.99</s><b style="color: red;">$70.00</b><br><br> <a href="Index.html">Add to Cart</a></p>
+  </div>
+</div>
+
+<div class="card" data-name="dress">
+  <img src="Images/Wdress6.jpg" alt="Dress 6">
+  <div class="cardbody">
+      <h6 class="cardtitle">Cocktail Party Dress</h6><br>
+      <p class="cardtext"><s>$89.99</s><b style="color: red;">$70.00</b><br><br> <a href="Index.html">Add to Cart</a></p>
+  </div>
+</div>
+
+<!-- Pants -->
+<div class="card" data-name="pant">
+  <img src="Images/Mpant1.jpg" alt="Pants 1">
+  <div class="cardbody">
+      <h6 class="cardtitle">Slim Fit Chinos</h6><br>
+      <p class="cardtext"><s>$45.99</s><b style="color: red;">$35.00</b><br><br> <a href="Index.html">Add to Cart</a></p>
+  </div>
+</div>
+
+<div class="card" data-name="pant">
+  <img src="Images/Mpant2.jpg" alt="Pants 2">
+  <div class="cardbody">
+      <h6 class="cardtitle">Denim Jeans</h6><br>
+      <p class="cardtext"><s>$39.99</s><b style="color: red;">$30.00</b><br><br> <a href="Index.html">Add to Cart</a></p>
+  </div>
+</div>
+
+<div class="card" data-name="pant">
+  <img src="Images/Mpant3.jpg" alt="Pants 3">
+  <div class="cardbody">
+      <h6 class="cardtitle">Cargo Pants</h6><br>
+      <p class="cardtext"><s>$34.99</s><b style="color: red;">$25.00</b><br><br> <a href="Index.html">Add to Cart</a></p>
+  </div>
+</div>
+
+<!-- Pants (Continued) -->
+<div class="card" data-name="pant">
+  <img src="Images/Mpant4.jpg" alt="Pants 4">
+  <div class="cardbody">
+      <h6 class="cardtitle">Cargo Pants</h6><br>
+      <p class="cardtext"><s>$34.99</s><b style="color: red;">$25.00</b><br><br> <a href="Index.html">Add to Cart</a></p>
+  </div>
+</div>
+
+<div class="card" data-name="pant">
+  <img src="Images/Mpant5.jpg" alt="Pants 5">
+  <div class="cardbody">
+      <h6 class="cardtitle">Cargo Pants</h6><br>
+      <p class="cardtext"><s>$34.99</s><b style="color: red;">$25.00</b><br><br> <a href="Index.html">Add to Cart</a></p>
+  </div>
+</div>
+
+<div class="card" data-name="pant">
+  <img src="Images/Mpant6.jpg" alt="Pants 6">
+  <div class="cardbody">
+      <h6 class="cardtitle">Cargo Pants</h6><br>
+      <p class="cardtext"><s>$34.99</s><b style="color: red;">$25.00</b><br><br> <a href="Index.html">Add to Cart</a></p>
+  </div>
+</div>
+
+<!-- Outerwear -->
+<div class="card" data-name="outerwear">
+  <img src="Images/Wotw1.jpg" alt="Outerwear 1">
+  <div class="cardbody">
+      <h6 class="cardtitle">Trench Coat</h6><br>
+      <p class="cardtext"><s>$99.99</s><b style="color: red;">$80.00</b><br><br> <a href="Index.html">Add to Cart</a></p>
+  </div>
+</div>
+
+<div class="card" data-name="outerwear">
+  <img src="Images/Wotw2.jpg" alt="Outerwear 2">
+  <div class="cardbody">
+      <h6 class="cardtitle">Leather Jacket</h6><br>
+      <p class="cardtext"><s>$79.99</s><b style="color: red;">$60.00</b><br><br> <a href="Index.html">Add to Cart</a></p>
+  </div>
+</div>
+
+<div class="card" data-name="outerwear">
+  <img src="Images/Wotw3.jpg" alt="Outerwear 3">
+  <div class="cardbody">
+      <h6 class="cardtitle">Winter Parka</h6><br>
+      <p class="cardtext"><s>$120.00</s><b style="color: red;">$100.00</b><br><br> <a href="Index.html">Add to Cart</a></p>
+  </div>
+</div>
+
+<div class="card" data-name="outerwear">
+  <img src="Images/Wotw4.jpg" alt="Outerwear 4">
+  <div class="cardbody">
+      <h6 class="cardtitle">Winter Parka</h6><br>
+      <p class="cardtext"><s>$120.00</s><b style="color: red;">$100.00</b><br><br> <a href="Index.html">Add to Cart</a></p>
+  </div>
+</div>
+
+<div class="card" data-name="outerwear">
+  <img src="Images/Wotw5.jpg" alt="Outerwear 5">
+  <div class="cardbody">
+      <h6 class="cardtitle">Winter Parka</h6><br>
+      <p class="cardtext"><s>$120.00</s><b style="color: red;">$100.00</b><br><br> <a href="Index.html">Add to Cart</a></p>
+  </div>
+</div>
+
+<div class="card" data-name="outerwear">
+  <img src="Images/Wotw6.jpg" alt="Outerwear 6">
+  <div class="cardbody">
+      <h6 class="cardtitle">Winter Parka</h6><br>
+      <p class="cardtext"><s>$120.00</s><b style="color: red;">$100.00</b><br><br> <a href="Index.html">Add to Cart</a></p>
+  </div>
+</div>
+
+<!-- Hoodie -->
+<div class="card" data-name="hoodie">
+  <img src="Images/MSweat1.jpg" alt="Hoodie 1">
+  <div class="cardbody">
+      <h6 class="cardtitle">Graphic Print Hoodie</h6><br>
+      <p class="cardtext"><s>$55.99</s><b style="color: red;">$45.00</b><br><br> <a href="Index.html">Add to Cart</a></p>
+  </div>
+</div>
+
+<!-- Hoodie (Continued) -->
+<div class="card" data-name="hoodie">
+  <img src="Images/MSweat3.jpg" alt="Hoodie 3">
+  <div class="cardbody">
+      <h6 class="cardtitle">Fleece-lined Sweatshirt</h6><br>
+      <p class="cardtext"><s>$60.00</s><b style="color: red;">$50.00</b><br><br> <a href="Index.html">Add to Cart</a></p>
+  </div>
+</div>
+
+<div class="card" data-name="hoodie">
+  <img src="Images/MSweat4.jpg" alt="Hoodie 4">
+  <div class="cardbody">
+      <h6 class="cardtitle">Fleece-lined Sweatshirt</h6><br>
+      <p class="cardtext"><s>$60.00</s><b style="color: red;">$50.00</b><br><br> <a href="Index.html">Add to Cart</a></p>
+  </div>
+</div>
+
+<div class="card" data-name="hoodie">
+  <img src="Images/MSweat5.jpg" alt="Hoodie 5">
+  <div class="cardbody">
+      <h6 class="cardtitle">Fleece-lined Sweatshirt</h6><br>
+      <p class="cardtext"><s>$60.00</s><b style="color: red;">$50.00</b><br><br> <a href="Index.html">Add to Cart</a></p>
+  </div>
+</div>
+
+<div class="card" data-name="hoodie">
+  <img src="Images/MSweat6.jpg" alt="Hoodie 6">
+  <div class="cardbody">
+      <h6 class="cardtitle">Fleece-lined Sweatshirt</h6><br>
+      <p class="cardtext"><s>$60.00</s><b style="color: red;">$50.00</b><br><br> <a href="Index.html">Add to Cart</a></p>
+  </div>
+</div>
+
+<!-- Blouse -->
+<div class="card" data-name="blouse">
+  <img src="Images/WTop1.jpg" alt="Blouse 1">
+  <div class="cardbody">
+      <h6 class="cardtitle">Lace Trim Blouse</h6><br>
+      <p class="cardtext"><s>$35.99</s><b style="color: red;">$25.00</b><br><br> <a href="Index.html">Add to Cart</a></p>
+  </div>
+</div>
+
+<div class="card" data-name="blouse">
+  <img src="Images/WTop2.jpg" alt="Blouse 2">
+  <div class="cardbody">
+      <h6 class="cardtitle">STARRIA Dress</h6><br>
+      <p class="cardtext"><s>$28.90</s><b style="color: red;">$20.00</b><br><br> <a href="Index.html">Add to Cart</a></p>
+  </div>
+</div>
+
+<div class="card" data-name="blouse">
+  <img src="Images/WTop3.jpg" alt="Blouse 3">
+  <div class="cardbody">
+      <h6 class="cardtitle">STARRIA Dress</h6><br>
+      <p class="cardtext"><s>$12.90</s><b style="color: red;">$10.00</b><br><br> <a href="Index.html">Add to Cart</a></p>
+  </div>
+</div>
+
+<div class="card" data-name="blouse">
+  <img src="Images/WTop4.jpg" alt="Blouse 4">
+  <div class="cardbody">
+      <h6 class="cardtitle">STARRIA Dress</h6><br>
+      <p class="cardtext"><s>$38.90</s><b style="color: red;">$30.00</b><br><br> <a href="Index.html">Add to Cart</a></p>
+  </div>
+</div>
+
+<div class="card" data-name="blouse">
+  <img src="Images/WTop5.jpg" alt="Blouse 5">
+  <div class="cardbody">
+      <h6 class="cardtitle">STARRIA Dress</h6><br>
+      <p class="cardtext"><s>$25.90</s><b style="color: red;">$20.00</b><br><br> <a href="Index.html">Add to Cart</a></p>
+  </div>
+</div>
+
+<div class="card" data-name="blouse">
+  <img src="Images/WTop6.jpg" alt="Blouse 6">
+  <div class="cardbody">
+      <h6 class="cardtitle">STARRIA Dress</h6><br>
+      <p class="cardtext"><s>$67.00</s><b style="color: red;">$50.00</b><br><br> <a href="Index.html">Add to Cart</a></p>
+  </div>
+</div>
+
+  </div>
+</div>
+
+</div>
+</div>
+
+
+<div id="cartModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeCartModal()">&times;</span>
+    <h2>Shopping Cart</h2>
+    <ul id="cartItems"></ul>
+    <button onclick="checkout()">Checkout</button>
+  </div>
+</div>
+
+  
+<!-- footer -->
+
+<section class="footer">
+  <div class="footer-row">
+    <div class="footer-col">
+      <h4>Info</h4>
+      <ul class="links">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Compressions</a></li>
+        <li><a href="#">Customers</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Collection</a></li>
+      </ul>
     </div>
-  </footer>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul class="links">
+        <li><a href="#">Free Designs</a></li>
+        <li><a href="#">Latest Designs</a></li>
+        <li><a href="#">Themes</a></li>
+        <li><a href="#">Popular Designs</a></li>
+        <li><a href="#">Art Skills</a></li>
+        <li><a href="#">New Uploads</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <ul class="links">
+        <li><a href="#">Customer Agreement</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">GDPR</a></li>
+        <li><a href="#">Security</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">Media Kit</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Newsletter</h4>
+      <p>
+        Subscribe to our newsletter for a weekly dose
+        of news, updates, helpful tips, and
+        exclusive offers.
+      </p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook-f" id="fb"></i>
+        <i class="fa-brands fa-twitter" id="tw"></i>
+        <i class="fa-brands fa-linkedin" id="lk"></i>
+        <i class="fa-brands fa-github" id="gh"></i>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 </body>
