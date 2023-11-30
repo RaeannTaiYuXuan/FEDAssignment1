@@ -13,6 +13,10 @@ closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
 // This line adds a click event listener to the close menu button.
 // When the button is clicked, it programmatically triggers a click on the hamburger button.
 
+// end of menu button 
+
+
+
 // Select relevant HTML elements for image filtering
 function filterImages(category) {
     // Get all elements with the class 'item'
@@ -33,6 +37,10 @@ function filterImages(category) {
         }
     });
 }
+
+
+// end of filter gallery
+
 
 // Execute the following code when the window has fully loaded
 window.addEventListener("load", function () {
@@ -69,29 +77,6 @@ function displayText() {
     var text = document.getElementById('textMsg');
     text.style.display = 'block';
 }
-
-// Select relevant HTML elements for image filtering on a filter page
-function filterImages(category) {
-    // Get all elements with the class 'card'
-    const items = document.querySelectorAll('.card');
-
-    // Loop through each card
-    items.forEach(item => {
-        // Get the value of the 'data-name' attribute of the current card
-        const dataCategory = item.getAttribute('data-name');
-
-        // Check if the category is 'all' or matches the data-category of the card
-        if (category === 'all' || dataCategory === category) {
-            // Display the card
-            item.style.display = 'block';
-        } else {
-            // Hide the card
-            item.style.display = 'none';
-        }
-    });
-}
-
-
 
 
 // alert
