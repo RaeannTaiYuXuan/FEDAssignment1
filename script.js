@@ -20,7 +20,7 @@ closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
 // Select relevant HTML elements for image filtering
 function filterImages(category) {
     // Get all elements with the class 'item'
-    const items = document.querySelectorAll('.item');
+    const items = document.querySelectorAll('.card');
 
     // Loop through each item
     items.forEach(item => {
